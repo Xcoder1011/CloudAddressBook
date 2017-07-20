@@ -12,6 +12,6 @@
 
 #import "HexColors.h"
 #import "ViewUtils.h"
-
+#import <Masonry.h>
 
 #endif /* Classes_Macro_h */

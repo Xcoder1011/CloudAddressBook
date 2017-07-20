@@ -20,6 +20,7 @@
 
 #import "Classes_Macro.h"
 #import "UI_Macro.h"
+#import "BaseMacro.h"
 
 #endif
 

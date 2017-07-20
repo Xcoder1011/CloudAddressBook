@@ -25,9 +25,15 @@
 		BCF22DE01F20A4E300D1C1EB /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DDF1F20A4E300D1C1EB /* ViewUtils.m */; };
 		BCF22DE51F20A4F500D1C1EB /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DE21F20A4F500D1C1EB /* SKButton.m */; };
 		BCF22DE61F20A4F500D1C1EB /* UIButton+PreventMultipleClicks.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DE41F20A4F500D1C1EB /* UIButton+PreventMultipleClicks.m */; };
+		BCF22DEE1F20AA2500D1C1EB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DED1F20AA2500D1C1EB /* MainViewController.m */; };
+		BCF22DF11F20B0D500D1C1EB /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DF01F20B0D500D1C1EB /* ContactTableViewCell.m */; };
+		BCF22DF91F20C3EF00D1C1EB /* SKContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF22DF81F20C3EF00D1C1EB /* SKContactManager.m */; };
+		F00E2717EAADA4822BFB1D77 /* libPods-CloudAddressBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 982FDB9D5251CA52E6598CD0 /* libPods-CloudAddressBook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D8860D92AF76BE2351B7B9B /* Pods-CloudAddressBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudAddressBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudAddressBook/Pods-CloudAddressBook.debug.xcconfig"; sourceTree = "<group>"; };
+		982FDB9D5251CA52E6598CD0 /* libPods-CloudAddressBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudAddressBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF22D981F209DE900D1C1EB /* CloudAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF22D9C1F209DE900D1C1EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCF22D9E1F209DE900D1C1EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +72,13 @@
 		BCF22DE41F20A4F500D1C1EB /* UIButton+PreventMultipleClicks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PreventMultipleClicks.m"; sourceTree = "<group>"; };
 		BCF22DE71F20A63C00D1C1EB /* Classes_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes_Macro.h; sourceTree = "<group>"; };
 		BCF22DE81F20A65B00D1C1EB /* UI_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI_Macro.h; sourceTree = "<group>"; };
+		BCF22DEC1F20AA2500D1C1EB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BCF22DED1F20AA2500D1C1EB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BCF22DEF1F20B0D500D1C1EB /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		BCF22DF01F20B0D500D1C1EB /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		BCF22DF71F20C3EF00D1C1EB /* SKContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKContactManager.h; sourceTree = "<group>"; };
+		BCF22DF81F20C3EF00D1C1EB /* SKContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKContactManager.m; sourceTree = "<group>"; };
+		C6518DD57F4924FC31386A48 /* Pods-CloudAddressBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudAddressBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudAddressBook/Pods-CloudAddressBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00E2717EAADA4822BFB1D77 /* libPods-CloudAddressBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5A34976B3A5BF1BE4D8DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				982FDB9D5251CA52E6598CD0 /* libPods-CloudAddressBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650F7F1626FCEC7233A17523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D8860D92AF76BE2351B7B9B /* Pods-CloudAddressBook.debug.xcconfig */,
+				C6518DD57F4924FC31386A48 /* Pods-CloudAddressBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BCF22D8F1F209DE900D1C1EB = {
 			isa = PBXGroup;
 			children = (
 				BCF22D9A1F209DE900D1C1EB /* CloudAddressBook */,
 				BCF22D991F209DE900D1C1EB /* Products */,
+				650F7F1626FCEC7233A17523 /* Pods */,
+				0D5A34976B3A5BF1BE4D8DD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +186,7 @@
 		BCF22DB51F20A19200D1C1EB /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				BCF22DF61F20C3E100D1C1EB /* SKContactManager */,
 				BCF22DE11F20A4F500D1C1EB /* SKButton.h */,
 				BCF22DE21F20A4F500D1C1EB /* SKButton.m */,
 				BCF22DE31F20A4F500D1C1EB /* UIButton+PreventMultipleClicks.h */,
@@ -256,6 +290,8 @@
 		BCF22DEA1F20A87100D1C1EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCF22DEC1F20AA2500D1C1EB /* MainViewController.h */,
+				BCF22DED1F20AA2500D1C1EB /* MainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,8 +299,19 @@
 		BCF22DEB1F20A87100D1C1EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCF22DEF1F20B0D500D1C1EB /* ContactTableViewCell.h */,
+				BCF22DF01F20B0D500D1C1EB /* ContactTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BCF22DF61F20C3E100D1C1EB /* SKContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCF22DF71F20C3EF00D1C1EB /* SKContactManager.h */,
+				BCF22DF81F20C3EF00D1C1EB /* SKContactManager.m */,
+			);
+			path = SKContactManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCF22DAF1F209DEA00D1C1EB /* Build configuration list for PBXNativeTarget "CloudAddressBook" */;
 			buildPhases = (
+				9FC337444164A22FA3BD8980 /* [CP] Check Pods Manifest.lock */,
 				BCF22D941F209DE900D1C1EB /* Sources */,
 				BCF22D951F209DE900D1C1EB /* Frameworks */,
 				BCF22D961F209DE900D1C1EB /* Resources */,
+				0F148FA18912122A2660F821 /* [CP] Embed Pods Frameworks */,
+				DB285D973E3DEB1FBD369010 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +384,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F148FA18912122A2660F821 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudAddressBook/Pods-CloudAddressBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC337444164A22FA3BD8980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB285D973E3DEB1FBD369010 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudAddressBook/Pods-CloudAddressBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCF22D941F209DE900D1C1EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,6 +440,8 @@
 				BCF22DD11F20A19200D1C1EB /* BaseFullContentViewController.m in Sources */,
 				BCF22DD41F20A19200D1C1EB /* CellAdapter.m in Sources */,
 				BCF22DD61F20A19200D1C1EB /* UITableView+CustomTableViewCell.m in Sources */,
+				BCF22DEE1F20AA2500D1C1EB /* MainViewController.m in Sources */,
+				BCF22DF11F20B0D500D1C1EB /* ContactTableViewCell.m in Sources */,
 				BCF22DD21F20A19200D1C1EB /* BaseNavigationController.m in Sources */,
 				BCF22DE61F20A4F500D1C1EB /* UIButton+PreventMultipleClicks.m in Sources */,
 				BCF22DE01F20A4E300D1C1EB /* ViewUtils.m in Sources */,
@@ -349,6 +449,7 @@
 				BCF22DD81F20A19200D1C1EB /* CustomNormalViewController.m in Sources */,
 				BCF22DE51F20A4F500D1C1EB /* SKButton.m in Sources */,
 				BCF22DD51F20A19200D1C1EB /* CustomTableViewCell.m in Sources */,
+				BCF22DF91F20C3EF00D1C1EB /* SKContactManager.m in Sources */,
 				BCF22D9D1F209DE900D1C1EB /* main.m in Sources */,
 				BCF22DD71F20A19200D1C1EB /* CustomFullViewController.m in Sources */,
 				BCF22DDD1F20A3CD00D1C1EB /* HexColors.m in Sources */,
@@ -469,6 +570,7 @@
 		};
 		BCF22DB01F209DEA00D1C1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8860D92AF76BE2351B7B9B /* Pods-CloudAddressBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LH66V26Z7L;
@@ -484,6 +586,7 @@
 		};
 		BCF22DB11F209DEA00D1C1EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6518DD57F4924FC31386A48 /* Pods-CloudAddressBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LH66V26Z7L;
@@ -516,6 +619,7 @@
 				BCF22DB11F209DEA00D1C1EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

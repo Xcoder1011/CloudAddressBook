@@ -11,6 +11,11 @@
 #import <sys/time.h>
 #import <pthread.h>
 
+#import "BaseNavigationController.h"
+#import "UITableView+CustomTableViewCell.h"
+#import "CustomTableViewCell.h"
+
+
 #ifndef BaseMacro_h
 #define BaseMacro_h
 
@@ -66,25 +71,8 @@ static inline void dispatch_sync_on_main_queue(void(^block)()) {
     }
 }
 
-
 static inline void dispatch_async_on_global_queue(void(^block)()) {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
 }
-
-static inline void dispatch_async_on_globalqueue_then_on_mainqueue(void(^globalblock)(),void(^mainblock)()){
-     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-         globalblock();
-         dispatch_async_on_main_queue(mainblock);
-     });
-//    dispatch_async_on_global_queue(globalblock);
-//    
-//    dispatch_async_on_global_queue(^{
-//        globalblock();
-//        dispatch_async_on_main_queue(mainblock);
-//    });
-
-}
-
-
 
 #endif /* BaseMacro_h */
